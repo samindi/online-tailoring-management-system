@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+    overflow-x:hidden;
+    font-family: 'Lato',sans-serif; 
+    height: 100%;
+    background-image: url(../images/36.jpg);
+    background-attachment: fixed;
+    
+  
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    z-index: 1000;
+   
+}
+ 
+
+.navbar-brand{
+    height: 2rem;
+}
+
+
+.navbar-nav li{
+    padding-right: .7rem;
+   
+    
+}
+
+
+.header-img {
+    width: 100%;
+    height: 600px;
+    background: url(../images/48.jpg);
+    background-size: cover;
+  }
+
+.hero-image {
+   background-size: cover;
+   
+  }
+
+.caption{
+    
+    position: absolute;
+    margin-right: -50%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%) 
+    
+}
+
+.caption h1 { 
+    font-size: 2.2rem;
+    font-weight:700;
+    letter-spacing: .3rem;
+    text-shadow:.1rem .1rem .8rem wheat;
+    color: white;
+    text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+.caption a:hover {
+    color: #000000 !important;
+}
+
+.d-block{
+    height:575px;
+}
+
+.raw{
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+}
+
+.reg{
+    text-align:left;
+}
+    
+.left{
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.modal-header
+ {
+     padding:9px 15px;
+     border-bottom:1px solid #df9c0b;
+     background-color: #df9c0b;
+ }
+
+ .card-topic{
+     text-align: center;
+     color:white;
+     font-family: serif;
+     margin-top: 75px;
+ }
+
+ 
+ .card-deck{
+     margin: 100px;
+     padding-left:150px;
+     padding-right: 150px;
+     color: black;
+     
+ }
+
+ .section-5{
+     padding:20vmin 0;
+     /*background:url(../images/53.jpg)*/
+     
+ }
+
+ .section-5 .raw .col-md-6 .pray img{
+     opacity: 0.8;
+     width: 80%;
+     border-radius: 0.2em;
+
+ }
+
+ .section-5 .raw .col-md-6 .panel{
+     position: absolute;
+     top: 7vmin;
+     left: -18vmin;
+     background: white;
+     border-radius: 3px;
+     text-align: left;
+     padding: 13vmin 5vmin 20vmin 10vmin;
+     box-shadow: 0px 25px 42px rgba(0, 0,0, 0.2);
+ }
+
+ .cover{
+      width:100%;
+     height: 55vmin;
+     background: url(../images/28.jpg);
+     background-position: -24rem -19rem ;
+     background-size: 150%;
+     position: sticky;
+ }
+
+ .cover .content{
+     background: rgba(0, 0,0, 0.7);
+     height: 100%;
+     
+     padding-top: 10vmin;
+ }
+
+ .cover .content>h1{
+     font-family:var(--patua);
+     font-size: 6vmin;
+     color: whitesmoke;
+ }
+
+ .cover .content{
+     font-family: var(--rubik);
+     font-size: 2vmin;
+     color: #e5e5e5;
+ }
+
+ /*.numbers .rect{
+     position: relative;
+     z-index: 1;
+     background: white;
+     width: 17rem;
+     height: 12rem;
+     padding-top: 3.5vmin;
+     margin: 1rem;
+     border-radius: 0.5em;
+     box-shadow: 1px 2px 50 px 0px rgba(250, 0,0, 0.349);
+ }
+
+ .numbers{
+     margin-top: -15vmin;
+ }
+ */
+
+
+ .section-4 .container h1{
+     font-size: 6vmin;
+     text-align: center;
+     color: white;
+ }
+
+ .section-4 .team{
+     padding: 10vmin 4vmin;
+ }
+
+ .section-4 .card{
+     width: 22rem;
+     margin-top: 10vmin;
+     
+ }
+
+ .section-4 .card .card-text{
+     padding: 0.5em;
+    
+ }
+
+ .section-4 .card .card-body>a{
+    font-size: 1.5em;
+   
+}
+
+.section-4 .carousel-item{
+    padding-left: 3rem;
+    
+}
+
+.hd{
+    background-image: url(../images/36.jpg);
+}
+
+.delivery{
+   margin: 150px;
+    background: rgb(231, 180, 68);
+    
+}
+
+.delivery .col-md-6{
+    
+   margin-top: 100px;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.contact{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/36.jpg);
+    color: cornsilk;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ 
+
+
+.col-md-5{
+    margin-top: 80px;
+    box-shadow: 1px 1px 5px 10px rgb(14, 13, 13);
+    background: rgba(0, 0,0, 0.4);
+    margin-bottom: 80px;
+}
+
+.label{
+    font-weight: normal;
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top: 15px;
+    height:40px;
+    color:white;
+}
+
+.btn-info{
+    margin-top: 20px;
+    font-size: 18px;
+    width: 120px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.head_title{
+    color: white;
+}
+
+.carousel-item  h5{
+    text-align: left;
+    top: 50%;
+}
