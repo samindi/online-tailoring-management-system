@@ -95,8 +95,8 @@
 <div class="caption text-center">
       <h1>Aradhana Tailors</h1>
       <!--<h3>Customize Your True Personalization</h3>-->
-      <a href=" /login" class="btn btn-outline-light btn-lg" >LOGIN</a>
-      <a href="/register" class="btn btn-outline-light btn-lg" >REGISTER</a>
+      <a href="{{ route('login') }}" class="btn btn-outline-light btn-lg" >LOGIN</a>
+      <a href="{{ route('register') }}" class="btn btn-outline-light btn-lg" >REGISTER</a>
  </div>
 
 

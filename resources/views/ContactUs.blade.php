@@ -25,37 +25,52 @@
             </div>
             <br>
 
-            <div class="raw">
-                <label class="label col-md-2 control-label">First Name</label>
-                <div class="col-md-10">
-                    <input type="text" class="form-control" id="FName" placeholder="First Nmae">
+@if($errors->any())
+<div class="alert alert-warning">
+<ul>
+@foreach($errors->all() as $error)
+<li>{{ $error }}</li>
+@endforeach
+</ul>
+</div>
+@endif
+
+
+<form action="/savefeedback" method="POST" enctype="multipart/form-data">
+{{ csrf_field() }}
+            <div class="row">
+                <label class="label col-md-2 control-label">Name</label>
+                <div class="col-md-10 form-group">
+                    <input type="text" name="Name" class="form-control"  id="Name" placeholder="Name">
                 </div>
             </div>
 
-            <div class="raw">
-                <label class="label col-md-2 control-label">Last Name</label>
-                <div class="col-md-10">
-                    <input type class="form-control" id="LName" placeholder="Last Name">
-                </div>
-            </div>
-
-            <div class="raw">
+            <div class="row">
                 <label class="label col-md-2 control-label">E-mail</label>
-                <div class="col-md-10">
-                    <input type="Email" class="form-control" id="Email" placeholder="E-mail">
+                <div class="col-md-10 form-group">
+                    <input type="Email" name="Email" class="form-control"  placeholder="E-mail">
                 </div>
             </div>
 
-            <div class="raw">
+            <div class="row">
+                <label class="label col-md-2 control-label">Subject</label>
+                <div class="col-md-10 form-group">
+                    <input type="text" name="Subject" class="form-control"   placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="row">
                 <label class="label col-md-2 control-label">Message</label>
-                <div class="col-md-10">
-                    <textarea class="form-control" placeholder="Message"></textarea>
+                <div class="col-md-10 form-group">
+                    <textarea name="Message" class="form-control" ></textarea>
                 </div>
             </div>
 
-            <a href="#"><div class="btn btn-info">Send</div></a>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
 
-
+</form>
 
         </div>
     </div>

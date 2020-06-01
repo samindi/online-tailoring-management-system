@@ -50,7 +50,7 @@ class EmployeesController extends Controller
         $emplo->salary = $request->input('salary');
         $emplo->update();
 
-        return redirect('employees')->with('status','Data Updated');
+        return redirect('/employees')->with('status','Data Updated');
     
     }
 

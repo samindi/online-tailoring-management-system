@@ -27,33 +27,29 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          AT
+        <a href="#" class="simple-text logo-mini">
+          
         </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+        <a href="#" class="simple-text logo-normal">
           Admin Dashboard
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li class="{{ 'dashboard' == request()->path() ? 'active' : '' }}">
-            <a href="/dashboard">
-              <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li>
-           <a href="./icons.html">
+          
+          <li class="{{ 'orders' == request()->path() ? 'active' : '' }}">
+           <a href="/orders">
               <i class="now-ui-icons education_atom"></i>
               <p>Order Details</p>
             </a>
           </li>
           <li>
-            <!--<a href="./map.html">
+          <li class="{{ 'feedback' == request()->path() ? 'active' : '' }}">
+            <a href="/feedbacks">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
+              <p>Feedbacks</p>
             </a>
-          </li>-->
+          </li>
           <li class="{{ 'employees' == request()->path() ? 'active' : '' }}">
             <a href="/employees">
               <i class="now-ui-icons users_single-02"></i>
@@ -66,24 +62,13 @@
               <p>User Profile</p>
             </a>
           </li>
-          <!--<li >
-           <a href="./tables.html">
-              <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Table List</p>
-            </a>
-          </li>
-          <li>
-            <a href="./typography.html">
-              <i class="now-ui-icons text_caps-small"></i>
-              <p>Typography</p>
-            </a>
-          </li>-->
-          <!--<li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>-->
+          <li class="{{ 'cancel' == request()->path() ? 'active' : '' }}">
+                        <a  href="/cancel">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Canceled Orders</p>
+                        </a>
+                    </li>
+          
         </ul>
       </div>
     </div>
@@ -99,7 +84,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Table List</a>
+            <a class="navbar-brand" href="#pablo"></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -230,6 +215,8 @@
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+
+
 
 yield('scripts')
 
